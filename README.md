@@ -1,7 +1,16 @@
+///Draft with Drawbacks....///
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LOLify</title>
+</head>
  <title>HEHEE 😁</title>
+ 
   <style>
-    
-   body {
+    body {
       margin: 0;
       font-family: 'Comic Neue', cursive;
       background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
@@ -218,6 +227,46 @@
         document.getElementById('userJoke').value = '';
       }
     }
+  </script>
+  <body>
+  <video class="bg-video" autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <video id="cursor-bot" class="overlay-animation" autoplay muted loop>
+    <source src="Animation.mov" type="video/quicktime">
+  </video>
+
+  <audio class="bg-audio" autoplay loop>
+    <source src="bg-music.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+    <header>
+      <h1>🔥 He Hee</h1>
+      <p class="subtitle">Peace begins with a smile</p>
+    </header>
+
+    <main>
+      <section class="chat-box">
+        <div class="whatsapp-chat" id="joke-response">
+          <div class="receiver">Press the button to LOL 🤣</div>
+        </div>
+        <button id="generate-joke" class="btn-animate" onclick="generateJoke()">Next Joke! 😎</button>
+      </section>
+
+      <section class="user-input">
+        <h2>👂? You Too..</h2>
+        <textarea id="userJoke" placeholder="Sireenga Sireenga Santhosama Irunga"></textarea>
+        <button onclick="addUserJoke()"> Add Yours🎤</button>
+      </section>
+    </main>
+    <footer>
+      <p> Siricha Nee Rombha Alagha Iruppa Paari </p>
+    </footer>
+  </div>
+</body>
+</html>
 
     const bot = document.getElementById('cursor-bot');
     document.addEventListener('mousemove', (e) => {
